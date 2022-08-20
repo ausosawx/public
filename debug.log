@@ -1,0 +1,163 @@
++ set -e
++ prefix=/usr
++ exec_prefix=/usr
++ datarootdir=/usr/share
++ prefix=/usr
++ exec_prefix=/usr
++ sbindir=/usr/bin
++ bindir=/usr/bin
++ sysconfdir=/etc
++ PACKAGE_NAME=GRUB
++ PACKAGE_VERSION=2:2.06.r297.g0c6c1aff2-1
++ host_os=linux-gnu
++ datadir=/usr/share
++ '[' x = x ']'
++ pkgdatadir=/usr/share/grub
++ export pkgdatadir
++ grub_cfg=
++ grub_mkconfig_dir=/etc/grub.d
+++ basename /usr/bin/grub-mkconfig
++ self=grub-mkconfig
++ grub_probe=/usr/bin/grub-probe
++ grub_file=/usr/bin/grub-file
++ grub_editenv=/usr/bin/grub-editenv
++ grub_script_check=/usr/bin/grub-script-check
++ export TEXTDOMAIN=grub
++ TEXTDOMAIN=grub
++ export TEXTDOMAINDIR=/usr/share/locale
++ TEXTDOMAINDIR=/usr/share/locale
++ . /usr/share/grub/grub-mkconfig_lib
+++ prefix=/usr
+++ exec_prefix=/usr
+++ datarootdir=/usr/share
+++ datadir=/usr/share
+++ bindir=/usr/bin
+++ sbindir=/usr/bin
+++ '[' x/usr/share/grub = x ']'
+++ test x/usr/bin/grub-probe = x
+++ test x/usr/bin/grub-file = x
+++ test x = x
+++ grub_mkrelpath=/usr/bin/grub-mkrelpath
+++ command -v gettext
+++ :
+++ grub_tab='	'
++ test 2 -gt 0
++ option=-o
++ shift
++ case "$option" in
+++ argument -o /boot/grub/grub.cfg
+++ opt=-o
+++ shift
+++ test 1 -eq 0
+++ echo /boot/grub/grub.cfg
++ grub_cfg=/boot/grub/grub.cfg
++ shift
++ test 0 -gt 0
++ '[' x0 = x ']'
++ '[' 0 '!=' 0 ']'
++ set /usr/bin/grub-probe dummy
++ test -f /usr/bin/grub-probe
++ :
+++ /usr/bin/grub-probe --target=device /
++ GRUB_DEVICE=/dev/nvme0n1p2
+++ /usr/bin/grub-probe --device /dev/nvme0n1p2 --target=fs_uuid
++ GRUB_DEVICE_UUID=6837ca27-df38-40ec-b35f-37b48626ab55
+++ /usr/bin/grub-probe --device /dev/nvme0n1p2 --target=partuuid
++ GRUB_DEVICE_PARTUUID=4e0bffa7-1e10-334c-9137-204b1f595322
+++ /usr/bin/grub-probe --target=device /boot
++ GRUB_DEVICE_BOOT=/dev/nvme0n1p2
+++ /usr/bin/grub-probe --device /dev/nvme0n1p2 --target=fs_uuid
++ GRUB_DEVICE_BOOT_UUID=6837ca27-df38-40ec-b35f-37b48626ab55
++ GRUB_DISABLE_OS_PROBER=true
+++ /usr/bin/grub-probe --device /dev/nvme0n1p2 --target=fs
++ GRUB_FS=ext2
++ '[' xext2 = xunknown ']'
++ '[' x = x ']'
++ GRUB_EARLY_INITRD_LINUX_STOCK='intel-uc.img intel-ucode.img amd-uc.img amd-ucode.img early_ucode.cpio microcode.cpio'
++ test -f /etc/default/grub
++ . /etc/default/grub
+++ GRUB_DEFAULT=0
+++ GRUB_TIMEOUT=5
+++ GRUB_DISTRIBUTOR=Arch
+++ GRUB_CMDLINE_LINUX_DEFAULT='loglevel=5 nowatchdog'
+++ GRUB_CMDLINE_LINUX=
+++ GRUB_PRELOAD_MODULES='part_gpt part_msdos'
+++ GRUB_TIMEOUT_STYLE=menu
+++ GRUB_TERMINAL_INPUT=console
+++ GRUB_GFXMODE=auto
+++ GRUB_GFXPAYLOAD_LINUX=keep
+++ GRUB_DISABLE_RECOVERY=true
+++ GRUB_DISABLE_OS_PROBER=false
++ '[' x = xtrue ']'
++ '[' x '!=' x ']'
++ termoutdefault=0
++ '[' x = x ']'
++ GRUB_TERMINAL_OUTPUT=gfxterm
++ termoutdefault=1
++ for x in ${GRUB_TERMINAL_OUTPUT}
++ case "x${x}" in
++ GRUB_ACTUAL_DEFAULT=0
++ '[' x0 = xsaved ']'
++ export GRUB_DEVICE GRUB_DEVICE_UUID GRUB_DEVICE_PARTUUID GRUB_DEVICE_BOOT GRUB_DEVICE_BOOT_UUID GRUB_DISABLE_OS_PROBER GRUB_FS GRUB_FONT GRUB_PRELOAD_MODULES GRUB_ACTUAL_DEFAULT
++ export GRUB_DEFAULT GRUB_HIDDEN_TIMEOUT GRUB_HIDDEN_TIMEOUT_QUIET GRUB_TIMEOUT GRUB_TIMEOUT_STYLE GRUB_DEFAULT_BUTTON GRUB_HIDDEN_TIMEOUT_BUTTON GRUB_TIMEOUT_BUTTON GRUB_TIMEOUT_STYLE_BUTTON GRUB_BUTTON_CMOS_ADDRESS GRUB_BUTTON_CMOS_CLEAN GRUB_DISTRIBUTOR GRUB_CMDLINE_LINUX GRUB_CMDLINE_LINUX_DEFAULT GRUB_CMDLINE_LINUX_RECOVERY GRUB_CMDLINE_XEN GRUB_CMDLINE_XEN_DEFAULT GRUB_CMDLINE_LINUX_XEN_REPLACE GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT GRUB_CMDLINE_NETBSD GRUB_CMDLINE_NETBSD_DEFAULT GRUB_CMDLINE_GNUMACH GRUB_EARLY_INITRD_LINUX_CUSTOM GRUB_EARLY_INITRD_LINUX_STOCK GRUB_TERMINAL_INPUT GRUB_TERMINAL_OUTPUT GRUB_SERIAL_COMMAND GRUB_DISABLE_UUID GRUB_DISABLE_LINUX_UUID GRUB_DISABLE_LINUX_PARTUUID GRUB_DISABLE_RECOVERY GRUB_VIDEO_BACKEND GRUB_GFXMODE GRUB_BACKGROUND GRUB_THEME GRUB_GFXPAYLOAD_LINUX GRUB_COLOR_NORMAL GRUB_COLOR_HIGHLIGHT GRUB_INIT_TUNE GRUB_SAVEDEFAULT GRUB_ENABLE_CRYPTODISK GRUB_BADRAM GRUB_OS_PROBER_SKIP_LIST GRUB_DISABLE_SUBMENU
++ test x/boot/grub/grub.cfg '!=' x
++ rm -f /boot/grub/grub.cfg.new
+++ umask
++ oldumask=0022
++ umask 077
++ exec
++ umask 0022
++ gettext 'Generating grub configuration file ...'
+正在生成 grub 配置文件 ...+ echo
+
++ cat
++ for i in "${grub_mkconfig_dir}"/*
++ case "$i" in
++ grub_file_is_not_garbage /etc/grub.d/00_header
++ test -f /etc/grub.d/00_header
++ case "$1" in
++ return 0
++ test -x /etc/grub.d/00_header
++ echo
++ echo '### BEGIN /etc/grub.d/00_header ###'
++ /etc/grub.d/00_header
++ echo '### END /etc/grub.d/00_header ###'
++ for i in "${grub_mkconfig_dir}"/*
++ case "$i" in
++ grub_file_is_not_garbage /etc/grub.d/10_linux
++ test -f /etc/grub.d/10_linux
++ case "$1" in
++ return 0
++ test -x /etc/grub.d/10_linux
++ echo
++ echo '### BEGIN /etc/grub.d/10_linux ###'
++ /etc/grub.d/10_linux
+找到 Linux 镜像：/boot/vmlinuz-linux
+找到 initrd 镜像：/boot/intel-ucode.img /boot/initramfs-linux.img
+Found fallback initrd image(s) in /boot:  intel-ucode.img initramfs-linux-fallback.img
++ echo '### END /etc/grub.d/10_linux ###'
++ for i in "${grub_mkconfig_dir}"/*
++ case "$i" in
++ grub_file_is_not_garbage /etc/grub.d/20_linux_xen
++ test -f /etc/grub.d/20_linux_xen
++ case "$1" in
++ return 0
++ test -x /etc/grub.d/20_linux_xen
++ echo
++ echo '### BEGIN /etc/grub.d/20_linux_xen ###'
++ /etc/grub.d/20_linux_xen
++ echo '### END /etc/grub.d/20_linux_xen ###'
++ for i in "${grub_mkconfig_dir}"/*
++ case "$i" in
++ grub_file_is_not_garbage /etc/grub.d/30_os-prober
++ test -f /etc/grub.d/30_os-prober
++ case "$1" in
++ return 0
++ test -x /etc/grub.d/30_os-prober
++ echo
++ echo '### BEGIN /etc/grub.d/30_os-prober ###'
++ /etc/grub.d/30_os-prober
+警告： os-prober 将运行以检测其它可引导分区。
+将使用 os-prober 的输出，以检测分区中可引导的二进制文件，并为其创建新的启动项。
+/usr/share/grub/grub-mkconfig_lib: 第 237 行：printf: “$”：无效格式字符
+在 
